@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(184, 255, 248);
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.casa{
+    margin-left: 25px;
+}
+.container-nav{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    
+}
+.on{
+    margin-left: 800px;
+    margin-top: 10px;
+}
+.off{
+    width: 30px;
+    height: 30px;
+    background-image: url(./logout_FILL0_wght400_GRAD0_opsz48.svg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -50px;
+    margin-left: 950px;
+
+}
+:hover.off{
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+
+}
+.container-main{
+    display: flex;
+    height: 600px;
+    margin-left: 50px;
+}
+.img{
+    width: 400px;
+    height: 400px;
+    background-image: url(https://st2.depositphotos.com/1017986/7636/i/950/depositphotos_76369589-stock-photo-man-with-futuristic-glasses-and.jpg);
+    margin-right: 50px;
+    margin-top: 40px;
+    border-radius: 50%;
+    margin-left: 25px;
+    box-shadow: 0 0 25px 30px rgb(255, 255, 255);
+    
+}
+.lorem{
+    width: 715px;
+    text-align: justify;
+    margin-left: 45px;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    border-radius: 15px;
+    padding: 5px;
+    
+}
+
+select{
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 100px;
+    margin-top: 200px;
+    border-radius: 25px;
+    margin-bottom: -40px;
+}
+
+.ordenar{
+    width: 200px;
+    height: 30px;
+    margin-left: 130px;
+    margin-top: 150px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1rem;
+}
+:hover.ordenar{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.productos{
+    width:800px;
+    height: 500px; 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 450px;
+    margin-top: -340px;
+}
+
+.producto-1{
+    display: grid;
+    grid-column: 0/1;
+    grid-row: 1/2;
+    background-image: url(https://nuevowevo.com/wp-content/uploads/2022/03/4.png);
+    background-position: center;
+    background-size: cover;
+    border: solid 1px;
+    text-align: center;
+    background-color: white;
+}
+
+.producto-2{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(https://nuevowevo.com/wp-content/uploads/2022/06/13-1.png);
+    background-position: center;
+    background-size: cover;
+    border: solid 1px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.producto-3{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(https://nuevowevo.com/wp-content/uploads/2022/06/Mesa-de-trabajo-1-300x300.png);
+    background-position: center;
+    background-size: cover;
+    border: solid 1px;
+    text-align: center;
+    background-color: white;
+
+}
+
+.producto-4{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(https://nuevowevo.com/wp-content/uploads/2022/02/3.png);
+    background-position: center;
+    background-size: cover;
+    border: solid 1px;
+    text-align: center;
+    background-color: white;
+
+}
+
+
+.modal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:125%;
+    background-color: rgba(128, 128, 128, 0.568);
+    display:none;
+    justify-content: center;
+    align-items: center;
+}
+.ventana_modal{
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    border-radius: 20px;
+    height: 200px;
+    padding: 30px;
+    justify-content: space-between;
+    text-align: center;
+      
+}
+.modal_titulo{
+    margin: 10px 20px;
+}
+.modal2{
+    position: absolute;
+    top:-200vh;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.411);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.segundo_modal{
+    background-color: white;
+    width: fit-content;
+    border-radius: 20px;
+    padding: 50px;
+    
+}
+.aceptar{
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+:hover.aceptar{
+    background-color: black;
+    color: white;
+}
+
+#cancelar{
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+:hover#cancelar{
+    background-color: black;
+    color: white;
+}
+.compra{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/foto-gratis/vista-posterior-pareja-bolsas-compras_23-2148303806.jpg?w=2000);
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.container-compra{
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 200px;
+    padding-top: 30px;
+}
+#volver{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: solid 1px;
+    background-color: white;
+    color: black;
+}
+:hover#volver{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.container-f{
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
