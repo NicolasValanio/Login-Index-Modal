@@ -1,5 +1,5 @@
 const user= "Valanio";
-const pasword= "1005373507";
+const pasword= "1234";
 
 function inicio() {
     let usuario=document.getElementById('input').value;
